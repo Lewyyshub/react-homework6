@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Overpass";
+  src: url(../../../font/Overpass-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.contentTwo {
+  max-width: 412px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Overpass";
+  gap: 30px;
+  margin-left: 32px;
+  margin-top: -1px;
+}
+.how {
+  color: var(--Pure-White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Heading (Large) */
+  font-family: Overpass;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+span {
+  color: var(--Light-Grey, #969fad);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Body */
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+.third {
+  display: flex;
+  gap: 21px;
+  /* max-width: 412px; */
+  flex-direction: row;
+}
+
+button {
+  cursor: pointer;
+  width: 51px;
+  height: 51px;
+  flex-shrink: 0;
+  fill: var(--Dark-Blue, #262e38);
+  border-radius: 100px;
+  border: none;
+  background-color: #262e38;
+  color: var(--Medium-Gray, #7c8798);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Rating */
+  font-family: Overpass;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.2px;
+}
+
+button.active {
+  background-color: #ff6600;
+  color: white;
+}
+button:hover {
+  fill: var(--Medium-Gray, #7c8798);
+  background-color: #7c8798;
+  color: white;
+  transition: ease-in-out 0.5s;
+}
+.fourth > button {
+  cursor: pointer;
+  width: 341px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 22.5px;
+  background: var(--Orange, #fc7614);
+  color: var(--Pure-White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Heading (Medium) */
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.fourth > button:hover {
+  transition: ease-in-out 0.5s;
+  border-radius: 22.5px;
+  background: var(--Pure-White, #fff);
+  color: var(--Orange, #fc7614);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Heading (Medium) */
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+@media (max-width: 480px) {
+  .how {
+    width: 279px;
+  }
+  .rev {
+    font-size: 14px;
+  }
+  .third > button {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+  }
+  .fourth > button {
+    width: 292px;
+    height: 45px;
+    flex-shrink: 0;
+  }
+}

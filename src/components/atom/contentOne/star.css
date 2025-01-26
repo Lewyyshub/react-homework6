@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.StarDiv {
+  margin-left: 32px;
+  margin-top: 32px;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: #262e38;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.starIcon {
+  width: 100%;
+  width: 16.747px;
+  height: 16px;
+  flex-shrink: 0;
+}
+@media (max-width: 480px) {
+  .StarDiv {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+}
